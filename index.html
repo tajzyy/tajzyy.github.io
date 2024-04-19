@@ -37,65 +37,65 @@
             <h3>Define the UI:</h3>
             <p>Navigate to <code>lib/main.dart</code> and define the UI for the color changer app. Use a <code>Container</code> widget as the root widget with a <code>Center</code> widget to center its child.</p>
             <pre><code class="language-dart">
-                class ColorChangerApp extends StatelessWidget {
-                @override
-                Widget build(BuildContext context) {
-                  return MaterialApp(
-                    home: Scaffold(
-                      appBar: AppBar(
-                        title: Text('Color Changer'),
-                      ),
-                      body: ColorChanger(),
-                    ),
-                  );
-                }
-              }
-              
-              class ColorChanger extends StatefulWidget {
-                @override
-                _ColorChangerState createState() => _ColorChangerState();
-              }</code></pre>
+class ColorChangerApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Color Changer'),
+        ),
+        body: ColorChanger(),
+      ),
+    );
+  }
+}
+
+class ColorChanger extends StatefulWidget {
+  @override
+  _ColorChangerState createState() => _ColorChangerState();
+}</code></pre>
         </li>
         <li>
             <h3>Implement Color Changing Button:</h3>
             <p>Create a stateful widget called <code>ColorChangerButton</code> that contains a button. When the button is pressed, it generates a random color and updates the background color of the app.</p>
             <pre><code class="language-dart">
-                class _ColorChangerState extends State<ColorChanger> {
-                Color _backgroundColor = Colors.white;
-              
-                void _changeColor() {
-                  setState(() {
-                    int red = Random().nextInt(256);
-                    int green = Random().nextInt(256);
-                    int blue = Random().nextInt(256);
-                    _backgroundColor = Color.fromRGBO(red, green, blue, 1.0);
-                  });
-                }
-              
-                @override
-                Widget build(BuildContext context) {
-                  return Container(
-                    color: _backgroundColor,
-                    child: Center(
-                      child: ElevatedButton(
-                        onPressed: _changeColor,
-                        child: Text('Change Color'),
-                        style: ElevatedButton.styleFrom(
-                          padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                        ),
-                      ),
-                    ),
-                  );
-                }
-              }</code></pre>
+class _ColorChangerState extends State<ColorChanger> {
+  Color _backgroundColor = Colors.white;
+
+  void _changeColor() {
+    setState(() {
+      int red = Random().nextInt(256);
+      int green = Random().nextInt(256);
+      int blue = Random().nextInt(256);
+      _backgroundColor = Color.fromRGBO(red, green, blue, 1.0);
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      color: _backgroundColor,
+      child: Center(
+        child: ElevatedButton(
+          onPressed: _changeColor,
+          child: Text('Change Color'),
+          style: ElevatedButton.styleFrom(
+            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+          ),
+        ),
+      ),
+    );
+  }
+}</code></pre>
         </li>
         <li>
             <h3>Call the ColorChangerApp widget in main:</h3>
             <p>In <code>lib/main.dart</code> you can call the widget created in the same file.</p>
             <pre><code class="language-dart">
-                void main() {
-                runApp(ColorChangerApp());
-              }</code></pre>
+void main() {
+  runApp(ColorChangerApp());
+}</code></pre>
         </li>
     </ol>
 
@@ -107,7 +107,7 @@
           <img src="resources/bottom_right.png" alt="Select Device">
       </li>
       <li>
-          <p>When this button is clicked a drop down menu at the will appear at the top of the screen. Select your device.</p>
+          <p>When this button is clicked a drop down menu will appear at the top of the screen. Select your device.</p>
           <img src="resources/select_device.png" alt="Dropdown Menu">
       </li>
       <li>
@@ -126,7 +126,7 @@
     <h2>Further Discussion/Conclusions:</h2>
     <p>In this tutorial, we've created a simple Flutter app using Visual Studio Code. The app consists of a button that changes the background color to a random color when pressed. This tutorial serves as a starting point for building more complex Flutter applications.</p>
     <p>For further study, you can explore advanced Flutter topics such as state management, navigation, and integrating with APIs.</p>
-    <p>You can find the complete source code for this tutorial on <a href="https://github.com/your_username/color_changer_app">GitHub</a>.</p>
+    <p>You can find the complete source code for this tutorial on <a href="https://github.com/tajzyy/color_changer_app">GitHub</a>.</p>
 
     <h2>See Also Section:</h2>
     <ul>
