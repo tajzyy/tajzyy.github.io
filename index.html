@@ -36,7 +36,7 @@
         <li>
             <h3>Define the UI:</h3>
             <p>Navigate to <code>lib/main.dart</code> and define the UI for the color changer app. Use a <code>Container</code> widget as the root widget with a <code>Center</code> widget to center its child.</p>
-            <pre><code class="language-dart">[
+            <pre><code class="language-dart">
                 class ColorChangerApp extends StatelessWidget {
                 @override
                 Widget build(BuildContext context) {
@@ -54,12 +54,12 @@
               class ColorChanger extends StatefulWidget {
                 @override
                 _ColorChangerState createState() => _ColorChangerState();
-              }]</code></pre>
+              }</code></pre>
         </li>
         <li>
             <h3>Implement Color Changing Button:</h3>
             <p>Create a stateful widget called <code>ColorChangerButton</code> that contains a button. When the button is pressed, it generates a random color and updates the background color of the app.</p>
-            <pre><code class="language-dart">[
+            <pre><code class="language-dart">
                 class _ColorChangerState extends State<ColorChanger> {
                 Color _backgroundColor = Colors.white;
               
@@ -87,25 +87,41 @@
                     ),
                   );
                 }
-              }]</code></pre>
+              }</code></pre>
         </li>
         <li>
-            <h3>Call the ColorChangerApp in main:</h3>
+            <h3>Call the ColorChangerApp widget in main:</h3>
             <p>In <code>lib/main.dart</code> you can call the widget created in the same file.</p>
-            <pre><code class="language-dart">[
+            <pre><code class="language-dart">
                 void main() {
                 runApp(ColorChangerApp());
-              }]</code></pre>
+              }</code></pre>
         </li>
     </ol>
 
     <h2>How to Run and Debug:</h2>
     <p>To run the Flutter app:</p>
     <ol>
-        <li>Set breakpoints in your Dart code by clicking in the gutter area next to the line numbers.</li>
-        <li>Start the debugger by clicking on the "Run and Debug" button in the toolbar or pressing <code>F5</code>.</li>
-        <li>The debugger will pause execution at the breakpoints, allowing you to inspect variables and step through the code.</li>
-    </ol>
+      <li>
+          <p>Select a device by clicking the device on the bottom right hand corner of the screen.</p>
+          <img src="resources/bottom_right.png" alt="Select Device">
+      </li>
+      <li>
+          <p>When this button is clicked a drop down menu at the will appear at the top of the screen. Select your device.</p>
+          <img src="resources/select_device.png" alt="Dropdown Menu">
+      </li>
+      <li>
+          <p>Start the debugger by clicking on the "Run and Debug" button in the toolbar or pressing <code>F5</code>.</p>
+          <img src="resources/run.png" alt="Run and Debug Button">
+      </li>
+      <li>
+          <p>Your app will run and allow you to debug as necessary.</p>
+          <video width="320" height="240" controls>
+            <source src="resources/app_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+      </li>
+  </ol>
 
     <h2>Further Discussion/Conclusions:</h2>
     <p>In this tutorial, we've created a simple Flutter app using Visual Studio Code. The app consists of a button that changes the background color to a random color when pressed. This tutorial serves as a starting point for building more complex Flutter applications.</p>
