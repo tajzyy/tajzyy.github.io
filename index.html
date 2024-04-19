@@ -1,14 +1,73 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building a Simple Flutter App with VSCode</title>
 </head>
-    <title>Travis Johnson</title>
-</head>
-
 <body>
-    <h1>Travis Johnson</h1>
-    <p>Not much in here yet...</p>
-</body>
+    <h1>Tutorial: Building a Simple Flutter App with VSCode</h1>
 
+    <h2>Overview:</h2>
+    <p>Flutter is a cross-platform framework for building mobile applications, developed by Google. In this tutorial, we will create a simple Flutter app using Visual Studio Code (VSCode). Our demo app will consist of a button that, when pressed, changes the background color of the app to a random color.</p>
+
+    <h2>Getting Started:</h2>
+    <p>To follow along with this tutorial, you will need:</p>
+    <ul>
+        <li>Visual Studio Code (VSCode)</li>
+        <li>Flutter SDK installed on your machine</li>
+        <li>Dart plugin installed in VSCode</li>
+    </ul>
+    <p>You can download and install Visual Studio Code from <a href="https://code.visualstudio.com/">here</a>, and Flutter SDK installation instructions can be found <a href="https://flutter.dev/docs/get-started/install">here</a>.</p>
+    <p>For detailed guidance on installing Flutter on Windows, you can watch this helpful video tutorial: <a href="https://www.youtube.com/watch?v=lkUj76YSMhQ&list=PLMQAFLQy-nKfhqpyh5bNvrt_R23U9LMvx&index=3&ab_channel=MJSDCoding">Installing Flutter on Windows</a>.</p>
+    <p>Once you have Flutter installed, configure it in Visual Studio Code by following this video tutorial: <a href="https://www.youtube.com/watch?v=vBgCgHBMR3c&ab_channel=MJSDCoding">Setting Up Flutter in VSCode</a>.</p>
+
+    <h2>Step-by-Step Coding Instructions:</h2>
+
+    <ol>
+        <li>
+            <h3>Create a New Flutter Project:</h3>
+            <p>Open VSCode and create a new Flutter project by running <code>flutter create color_changer_app</code>.</p>
+        </li>
+        <li>
+            <h3>Open the Project in VSCode:</h3>
+            <p>Open the <code>color_changer_app</code> folder in VSCode.</p>
+        </li>
+        <li>
+            <h3>Define the UI:</h3>
+            <p>Navigate to <code>lib/main.dart</code> and define the UI for the color changer app. Use a <code>Container</code> widget as the root widget with a <code>Center</code> widget to center its child.</p>
+            <pre><code class="language-dart">[...]</code></pre>
+        </li>
+        <li>
+            <h3>Implement Color Changing Button:</h3>
+            <p>Create a stateful widget called <code>ColorChangerButton</code> that contains a button. When the button is pressed, it generates a random color and updates the background color of the app.</p>
+            <pre><code class="language-dart">[...]</code></pre>
+        </li>
+    </ol>
+
+    <h2>How to Run and Debug:</h2>
+    <p>To run the Flutter app:</p>
+    <ol>
+        <li>Open the terminal in Visual Studio Code.</li>
+        <li>Navigate to the project directory (<code>color_changer_app</code>).</li>
+        <li>Run the command <code>flutter run</code> to build and run the app on an emulator or connected device.</li>
+    </ol>
+    <p>To debug the Flutter app:</p>
+    <ol>
+        <li>Set breakpoints in your Dart code by clicking in the gutter area next to the line numbers.</li>
+        <li>Start the debugger by clicking on the "Run and Debug" button in the toolbar or pressing <code>F5</code>.</li>
+        <li>The debugger will pause execution at the breakpoints, allowing you to inspect variables and step through the code.</li>
+    </ol>
+
+    <h2>Further Discussion/Conclusions:</h2>
+    <p>In this tutorial, we've created a simple Flutter app using Visual Studio Code. The app consists of a button that changes the background color to a random color when pressed. This tutorial serves as a starting point for building more complex Flutter applications.</p>
+    <p>For further study, you can explore advanced Flutter topics such as state management, navigation, and integrating with APIs.</p>
+    <p>You can find the complete source code for this tutorial on <a href="https://github.com/your_username/color_changer_app">GitHub</a>.</p>
+
+    <h2>See Also Section:</h2>
+    <ul>
+        <li><a href="https://flutter.dev/docs">Flutter Documentation</a></li>
+        <li><a href="https://flutter.dev/docs/development/ui/widgets">Flutter Widget Catalog</a></li>
+    </ul>
+</body>
 </html>
